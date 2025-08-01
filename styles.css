@@ -1260,6 +1260,135 @@ section {
     text-decoration: underline;
 }
 
+/* Workflow Examples Section */
+.workflow-examples-section {
+    background: var(--gradient-section-alt);
+    color: var(--color-text-white);
+}
+
+.workflow-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: var(--space-lg);
+    margin: var(--space-xl) 0;
+}
+
+.workflow-card {
+    background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.05) 100%);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: var(--border-radius-lg);
+    padding: var(--space-lg);
+    position: relative;
+    backdrop-filter: blur(20px);
+}
+
+.workflow-card h3 {
+    background: var(--gradient-text-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: var(--weight-bold);
+    margin-bottom: var(--space-md);
+}
+
+.workflow-tools {
+    display: flex;
+    align-items: center;
+    gap: var(--space-xs);
+    margin: var(--space-md) 0;
+    flex-wrap: wrap;
+}
+
+.tool-badge {
+    background: linear-gradient(135deg, var(--color-electric-blue), var(--color-hot-pink));
+    color: white;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: var(--weight-medium);
+    white-space: nowrap;
+}
+
+.workflow-arrow {
+    color: var(--color-golden);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.workflow-example {
+    margin-top: var(--space-md);
+}
+
+.workflow-result {
+    color: var(--color-lime);
+    font-weight: var(--weight-medium);
+    margin-top: var(--space-xs);
+}
+
+@media (max-width: 768px) {
+    .workflow-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-md);
+    }
+    
+    .workflow-tools {
+        justify-content: center;
+    }
+}
+
+/* Technical Architecture Section */
+.technical-architecture-section {
+    background: var(--gradient-hero-bg);
+    color: var(--color-text-white);
+}
+
+.architecture-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--space-lg);
+    margin: var(--space-xl) 0;
+}
+
+.architecture-card {
+    background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.05) 100%);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: var(--border-radius-lg);
+    padding: var(--space-lg);
+    position: relative;
+    backdrop-filter: blur(20px);
+}
+
+.architecture-icon {
+    font-size: 2.5rem;
+    margin-bottom: var(--space-md);
+}
+
+.architecture-card h3 {
+    background: var(--gradient-text-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: var(--weight-bold);
+    margin-bottom: var(--space-md);
+}
+
+.architecture-features {
+    list-style: none;
+    padding: 0;
+}
+
+.architecture-features li {
+    margin: var(--space-xs) 0;
+    color: rgba(255,255,255,0.9);
+}
+
+@media (max-width: 768px) {
+    .architecture-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-md);
+    }
+}
+
 /* Best Practices Section */
 .practices-grid {
     display: grid;
