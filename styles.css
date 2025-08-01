@@ -391,6 +391,7 @@ section {
 
 .section {
     background: var(--gradient-section-alt);
+    position: relative;
 }
 
 .section-header {
@@ -419,6 +420,19 @@ section {
     height: auto;
     filter: drop-shadow(0 10px 20px rgba(0,0,0,0.3));
     animation: pulse 3s ease-in-out infinite;
+}
+
+.section-decoration {
+    width: clamp(50px, 6vw, 80px);
+    height: auto;
+    object-fit: contain;
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    z-index: 1;
+    opacity: 0.6;
+    filter: drop-shadow(0 5px 15px rgba(0,0,0,0.2));
+    animation: float 4s ease-in-out infinite;
 }
 
 /* Content Grid */
@@ -570,6 +584,7 @@ section {
 /* Getting Started */
 .getting-started-section {
     background: var(--gradient-section-alt);
+    position: relative;
 }
 
 .getting-started-content {
@@ -1033,6 +1048,7 @@ section {
 .export-section {
     background: var(--gradient-hero-bg);
     padding: var(--space-2xl) 0;
+    position: relative;
 }
 
 .export-showcase {
