@@ -1,7 +1,14 @@
 /* Fluz-inspired maximalist style with 3D glossy objects and vibrant gradients */
 
 /* Import Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap');
+
+/* Local font mapping for Test Söhne Collection (uses locally installed names if available) */
+@font-face {
+    font-family: 'Test Söhne Collection';
+    src: local('Test Söhne Collection'), local('Test Söhne'), local('Test Soehne');
+    font-display: swap;
+}
 
 :root {
     /* Primary Colors */
@@ -27,8 +34,8 @@
     --color-orange: #FF6B35;
     
     /* Typography */
-    --font-display: 'Bebas Neue', 'Impact', 'Arial Black', sans-serif;
-    --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-display: 'Test Söhne Collection', 'Test Söhne', 'Test Soehne', -apple-system, system-ui, 'Inter', sans-serif;
+    --font-body: 'Test Söhne Collection', 'Test Söhne', 'Test Soehne', -apple-system, system-ui, 'Inter', sans-serif;
     
     /* Typography Sizes */
     --text-hero: clamp(3rem, 8vw, 6rem);
